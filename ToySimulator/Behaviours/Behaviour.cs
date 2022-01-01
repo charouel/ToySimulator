@@ -40,13 +40,13 @@ namespace ToySimulator.Behaviours
                     var newPosition = Robot.GetNextPosition();
                     if (Table.IsValidPosition(newPosition))
                         Robot.Position = newPosition;
-                    else 
-                    {
-                        //the movement command must always be valid: 
-                        //we do not block the output of the table, but we do a reset
-                        Table.ValidateErrorPosition(newPosition);
-                        Robot.Position = newPosition;
-                    }
+                    //else 
+                    //{
+                    //    //the movement command must always be valid: 
+                    //    //we do not block the output of the table, but we do a reset
+                    //    Table.ValidateErrorPosition(newPosition);
+                    //    Robot.Position = newPosition;
+                    //}
                     break;
                 case Command.Left:
                     Robot.RotateLeft();
