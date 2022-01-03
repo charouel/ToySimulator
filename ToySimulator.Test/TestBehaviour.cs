@@ -116,5 +116,5 @@ namespace ToySimulator.Test
     //        // assert
     //        Assert.AreEqual("Output: 3,1,NORTH", output);
     //    }
-    //}
+    }
 }
